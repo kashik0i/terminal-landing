@@ -10,6 +10,7 @@
 }
 .repo-card {
   margin: 5px;
-
-  background-color: blue;
+}
+.repo-card > div {
+  height: 100%;
 }
