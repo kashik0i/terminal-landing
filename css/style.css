@@ -1,15 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap");
 
 #codesandbox {
-  content: url("https://api.iconify.design/simple-icons/codesandbox.svg?color=white");
-  filter: invert(0.15);
+  content: url("https://api.iconify.design/simple-icons/codesandbox.svg");
+  filter: invert(var(--color-inv));
 }
 #codeforces {
   content: url("https://simpleicons.org/icons/codeforces.svg");
   width: 15px;
   height: 15px;
-  filter: invert(0.75);
+
+  filter: invert(var(--color-inv));
 }
+#coursera {
+  content: url("https://simpleicons.org/icons/coursera.svg");
+  width: 15px;
+  height: 15px;
+  filter: invert(var(--color-inv));
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -28,11 +36,10 @@ body {
   font-family: "Roboto Mono", sans-serif;
   background-color: var(--backgroud-color);
   color: var(--color);
-
+  transition: background 2s;
   letter-spacing: 0.01rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #ccc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,17 +119,26 @@ html.dark {
   --backgroud-color: #000000;
   --color: #fff;
   --primary: #7bdffd;
+  --color-inv: 1;
 }
 
 html.light {
-  --backgroud-color: #fff;
+  --backgroud-color: rgb(223, 216, 176);
   --color: #000000;
   --primary: #0366d6;
+  --color-inv: 0;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --backgroud-color: #343434;
     --color: #fff;
     --primary: #7bdffd;
+    --color-inv: 1;
   }
+}
+/* .repo-card {
+  background-color: var(--primary) important!;
+} */
+.fab {
+  color: var(--color) !important;
 }

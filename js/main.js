@@ -13,7 +13,7 @@ about.addEventListener("click", () => {
     },
     onblur: function () {
       this.setBackground("#777");
-    }
+    },
   });
 });
 contact.addEventListener("click", () => {
@@ -26,6 +26,13 @@ contact.addEventListener("click", () => {
     },
     onblur: function () {
       this.setBackground("#777");
-    }
+    },
   });
 });
+
+// const rootDataset = document.documentElement.dataset;
+
+// document.onclick = () => {
+//   const inDarkMode = rootDataset.theme === "dark";
+//   rootDataset.theme = inDarkMode ? "" : "dark";
+// };
