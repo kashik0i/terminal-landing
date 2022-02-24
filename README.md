@@ -5,7 +5,7 @@ personal website
 ## Planned
 
 - [ ] Add projects
-- [ ] Add resume
+- [x] Add resume
 - [ ] Convert to SvelteKit
 - [ ] Convert to TypeScript
 - [ ] Connect to Go backend
